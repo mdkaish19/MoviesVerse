@@ -19,7 +19,7 @@ const Cards = () => {
         setLoading(false);
       }
 getData();
-    },
+    },[])
     // {
     //   name: "The Dark",
     //   year: "2023",
@@ -92,7 +92,6 @@ getData();
     //   rating: 4,
     //   img: "https://www.indiewire.com/wp-content/uploads/2019/12/JokerPoster1200_5ca3c435318d42.29270548.jpg?w=800",
     // },
-  [])
 
   return (
     <div className="flex flex-wrap justify-between px-4 mt-2" >
@@ -119,6 +118,7 @@ getData();
         );
       })
     }
+    <Detail/>
     </div>
   );
 };

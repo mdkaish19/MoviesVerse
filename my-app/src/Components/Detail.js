@@ -12,7 +12,7 @@ const Detail = () => {
     title: "",
     year: "",
     image: "",
-    discription: "",
+    description: "",
     rating: 0,
     rated: 0,
   });

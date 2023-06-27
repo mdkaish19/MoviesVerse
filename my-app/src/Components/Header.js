@@ -26,7 +26,7 @@ const Header = () => {
       </Link>
       ) : (
         <Link to={"/login"}>
-          <h1 className="text-lg bg-green-500 cursor-pointer flex items-center">
+          <h1 className="text-lg bg-blue-500 cursor-pointer flex items-center">
             <Button>
               <span className="text-white font-medium capitalize">Login</span>
             </Button>

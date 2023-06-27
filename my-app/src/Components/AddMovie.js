@@ -5,7 +5,6 @@ import {movieRef, moviesRef} from "../Firebase/firebase";
 import swal from "sweetalert";
 import { Appstate } from "../App";
 import { useNavigate } from "react-router-dom";
-import Detail from "./Detail";
 
 const AddMovie = () => {
   const useAppstate = useContext(Appstate)
@@ -83,7 +82,7 @@ setLoading(false);
                     Year
                   </label>
                   <input
-                    type="year"
+                    type="number"
                     id="year"
                     name="year"
                     value={form.year}
@@ -114,8 +113,8 @@ setLoading(false);
                   <textarea
                     id="message"
                     name="message"
-                    value={form.discriptions}
-                    onChange={(e) => setForm({ ...form, discriptions: e.target.value })}
+                    value={form.descriptions}
+                    onChange={(e) => setForm({ ...form, descriptions: e.target.value })}
                     class="w-full rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
                   ></textarea>
                 </div>
